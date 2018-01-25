@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Practica 17</title>
+</head>
+<body>
+<form action="http://jorgesanchez.net/servicios/practica17.php" method="get">
+    <table border="1">
+        <tr>
+            <th colspan="3"><h1>Registro de asistentes a las jornadas de Seguridad</h1></th>
+        </tr>
+        <tr>
+            <td rowspan="12"><img src="cartel.jpg" width="313" height="442"> </td>
+            <th><label for="dni">DNI*</label></th>
+            <td><input type="text" id="dni" name="dni" pattern="[XYZ]?[0-9]{8}[A-Z]" required></td>
+        </tr>
+        <tr>
+            <th><label for="nombre">Nombre*</label></th>
+            <td><input type="text" id="nombre" name="nombre" required></td>
+        </tr>
+        <tr>
+            <th><label for="apellidos">Apellidos*</label></th>
+            <td><input type="text" id="apellidos" name="apellidos" required></td>
+        </tr>
+        <tr>
+            <th><label for="fecha">Fecha de nacimiento</label></th>
+            <td><input type="date" id="fecha" name="fecha"></td>
+        </tr>
+        <tr>
+            <th><label for="comunidad">Comunidad Autónoma de Procedencia</label></th>
+            <td>
+                <select name="comunidad" id="comunidad">
+                    <option value="an">Andalucia</option>
+                    <option value="cyl">Castilla y Leon</option>
+                    <option value="ca">Cantabria</option>
+                    <option value="as">Asturias</option>
+                    <option value="ga">Galicia</option>
+                    <option value="mad">Comunidad de Madrid</option>
+                    <option value="mur">Comunidad de Murcia</option>
+                    <option value="lr">La Rioja</option>
+                    <option value="ba">Baleares</option>
+                    <option value="ex">Extremadura</option>
+                    <option value="clm">Castilla La Mancha</option>
+                    <option value="cv">Comunidad Valenciana</option>
+                    <option value="cat">Cataluña</option>
+                    <option value="ar">Aragon</option>
+                    <option value="pv">Pais Vasco</option>
+                    <option value="na">Navarra</option>
+                    <option value="can">Canarias</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="6" colspan="2">
+                <fieldset>
+                    <legend>Institucion de origen</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <fieldset>
+                                    <legend>Tipo de institucion</legend>
+                                    <input name="tipo" id="educativo" type="radio" value="educativo"><label for="educativo">Centro
+                                    Educativo</label></input><br>
+                                    <input name="tipo" id="publica" type="radio" value="Publico"><label for="publica">Institucion
+                                    Public</label>a</input><br>
+                                    <input name="tipo" id="privada" type="radio" value="Privada"><label for="privada">Empresa
+                                    Privada</label></input><br>
+                                    <input name="tipo" id="otros" type="radio" value="Otros"><label for="otros">Otros /
+                                    Independiente</label></input><br>
+                                </fieldset>
+                            </td>
+                            <td>
+                                <label for="nombreinst">Nombre de la Institucion</label><br>
+                                <input type="text" id="nombreinst" name="nombreinst"><br>
+                                <label for="dirinst">Direccion de la Institucion</label><br>
+                                <textarea id="dirinst" name="dirinst"></textarea><br>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr>
+            <th>Enviar Datos</th>
+            <td><button type="submit">Enviar</button></td>
+        </tr>
+        <tr>
+            <th colspan="3"><em>Centro Don Bosco 1: 34190, Villamuriel de Cerrato Tlfno: 979 77 72 70</em></th>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
